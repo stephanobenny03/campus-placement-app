@@ -1,10 +1,11 @@
 import React from 'react'
+import NavBar from './NavBar'
 
 
 const AddRegistration = () => {
     return (
         <div>
-        
+        <NavBar/>
             <h2 className="text-center p-5">Campus Placement Registration</h2>
 
             <div className="container">

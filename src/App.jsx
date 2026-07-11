@@ -6,15 +6,21 @@ import './App.css'
 import AddRegistration from './components/AddRegistration'
 import SearchRegistration from './components/SearchRegistration'
 import DeleteRegistration from './components/DeleteRegistration'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
 <>
-<AddRegistration/>
-<SearchRegistration/>
-<DeleteRegistration/>
+<BrowserRouter>
+<Routes>
+  <Route path='/' element={<AddRegistration/>}/>
+  <Route path='/' element={<SearchRegistration/>}/>
+  <Route path='/' element={<DeleteRegistration/>}/>
+  
+</Routes>
+</BrowserRouter>
 </>
   )
 }
